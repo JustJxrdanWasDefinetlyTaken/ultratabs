@@ -28,7 +28,7 @@ export async function getUV(input) {
     let url = search(input, 'https://www.google.com/search?q=%s');
 
     // IMPORTANT: Change this to your Wisp server URL or else the site will not function
-    let wispUrl = "wss://edu-grad.global.ssl.fastly.net/wisp/"
+    let wispUrl = "wss://quasar.calculra.store/wisp/"
      if (await connection.getTransport() !== "/proxy/epoxy/index.mjs") {
         await connection.setTransport("/proxy/epoxy/index.mjs", [{ wisp: wispUrl }]);
     }
